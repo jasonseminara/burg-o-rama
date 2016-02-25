@@ -65,7 +65,7 @@ burgers.route('/:burgerID')
     burgerData[bID] = req.body;
 
     //redirect to the new burger
-    res.redirect('./' + bID)
+    res.redirect('/' + bID)
   })
 
   .delete(db.deleteBurger, (req,res)=>res.redirect('./') )
